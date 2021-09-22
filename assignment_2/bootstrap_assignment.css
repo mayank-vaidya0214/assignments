@@ -118,7 +118,6 @@ p {
   margin-top: 30px;
   color: #FFFFFF;
   background-color: #000000;
-  /* padding: 5px; */
   width: 90px;
 }
 
@@ -234,6 +233,46 @@ p {
   padding: 10px 20px;
 }
 
+.story-one::after  {
+  font-family: bootstrap-icons !important;
+  content: "\f4b5";
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
+.story-two::after  {
+  font-family: bootstrap-icons !important;
+  content: "\f460";
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
+.story-three::after  {
+  font-family: bootstrap-icons !important;
+  content: "\f3a0";
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
+.story-four::after  {
+  font-family: bootstrap-icons !important;
+  content: "\f3ee";
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
+.story-five::after  {
+  font-family: bootstrap-icons !important;
+  content: "\f4e1";
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .personal-info {
     width: 50%;
@@ -321,47 +360,6 @@ p {
   }
   .container::after {
     right: -25px;
-    font-size: 20px; 
-  }
-
-  .story-one::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4b5";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-two::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f460";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-three::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3a0";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-four::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3ee";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-five::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4e1";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
   }
 
   .timeline::after {
@@ -653,46 +651,6 @@ p {
     margin: 0px;
     font-size: 15px;
   }
-
-  .story-one::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4b5";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-two::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f460";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-three::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3a0";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-four::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3ee";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-five::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4e1";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }  
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -904,46 +862,6 @@ p {
     margin: 0px;
     font-size: 13px;
   }
-
-  .story-one::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4b5";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-two::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f460";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-three::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3a0";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-four::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3ee";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-five::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4e1";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1124,46 +1042,6 @@ p {
   .copyright {
     margin: 0px;
     font-size: 12px;
-  }
-
-  .story-one::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4b5";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-two::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f460";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-three::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3a0";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-
-  .story-four::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f3ee";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
-  }
-  
-  .story-five::after  {
-    font-family: bootstrap-icons !important;
-    content: "\f4e1";
-    padding: 5px 0px 0px 11px;
-    font-size: 27px;
-    color:#257EF6;
   }
 }
 
