@@ -1,0 +1,1169 @@
+@font-face {
+  font-family: 'bootstrap-icons';
+  src: url("Archive/fonts/bootstrap-icons.woff") format('woff');
+} 
+
+.body {
+  font-family: 'bootstrap-icons';
+}
+
+p {
+  color: #9A9C9D;
+}
+
+.navbar-toggler {
+  float: right;
+}  
+
+.nav-item {
+  padding: 0px 10px 0px 10px;
+}
+
+#navbarMenu .nav-title {
+  color: #2477F6;
+  font-size: 20px;
+  font: bolder;
+}
+
+#navbarMenu .nav-sub-title {
+  color: #4F4F51;
+  font-size: 10px;
+}
+
+.navbar-brand .nav-title {
+  font-size: 25px;
+  color: #2477F6;
+  text-align: center;
+ 
+}
+
+.navbar-brand .navbar-sub-title {
+  color: #4F4F51;
+  font-size: 10px;
+}
+
+.image-1 {
+  background-size: contain;
+  width: 100%;
+}
+
+.image-container-1 {
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.personal-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+    float: right;
+}
+
+.personal-info p {
+  font-size: 14px;
+}
+
+.circle {
+  border-radius:100%;
+    box-shadow: 0px 0px 35px rgba(0,0,0,40%);
+}
+
+.circle-info h1 {
+  color: #2477F6;
+  font-weight: bold;
+}
+
+.circle-info .years{
+  font-size: 14px;
+  color: #727983;
+}
+
+.circle-info .exp {
+  padding-left: 10px  ;
+  font-size: 20px;
+  color:#727983;
+}
+
+.image-container-2 {
+  margin-top: 50px;
+}
+
+.image-container-2 img{
+  float: left;
+} 
+
+.personal-info span {
+  color: #257EF6;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  border: 1px solid lightgray;
+  color: #257EF6;
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+}
+
+.button{
+  position: relative;
+}
+
+.book-btn {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+  color: #FFFFFF;
+  background-color: #000000;
+  /* padding: 5px; */
+  width: 90px;
+}
+
+.description-section {
+  color: #9A9C9D;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.timeline h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #FFFFFF;
+  top: 50;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 59px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  height: 200px;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -35px;
+  background-color: #FFFFFF;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+}
+
+.left {
+  left: 0;
+  margin: 0;
+}
+
+.right {
+  left: 50%;
+  margin: 0;
+}
+
+.left::before {
+  border: medium solid #0000;
+  border-color: transparent transparent transparent #000000;
+  border-width: 10px 0 10px 10px;
+  content: " ";
+  height: 0;
+  position: absolute;
+  right: 29px;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 50px;
+  border: medium solid #0000;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #000000 transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  border: 1px solid #4F4F51;
+  background-color: #FFFFFF;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,50%);
+  height: 150px;
+  width: 400px;
+}
+
+.content .title-section {
+  background-color: #000000;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #FFFFFF;
+  text-align: justify;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content .title-section, .content .description-section {
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .personal-info {
+    width: 50%;
+    height: 270px;
+    padding: 50px 50px 0px  50px;
+  }
+
+  .personal-info p {
+    font-size: 17px;
+  }
+
+  .personal-info h3 {
+    font-size: 45px;
+  }
+
+  .fa {
+    margin-left: 45px;
+    font-size: 20px;
+  }
+
+  .image-container-1 {
+    height: 572px;
+  }
+
+  .image-container-1 .image-1 {
+    height: 571px;
+  }
+
+  .left-sidebar {
+    margin-top: 100px;
+  }
+
+  .right-sidebar {
+    margin-top: 100px;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+    margin: 0px auto;
+  }
+
+  .image-container-2 .img-1 {
+    width: 800px;
+    padding: 50px 15px 0px 70px;
+  }
+  
+  .image-container-2 .img-2 {
+    width: 800px;
+    padding: 50px 70px 0px 15px;
+  }
+
+  .circle-info {
+    padding: 30px 10px 20px 60px;
+  }
+
+  .btn {
+    width: 150px;
+    font-size: 16px;
+    padding: 0px;
+  }
+
+  .container {
+    padding: 10px 116px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    height: 200px;
+  }
+
+  .right::after {
+    left: -25px;
+  }
+
+  .content {
+    width: 400px;
+  }
+
+  .left::before {
+    right: 75px;
+  }
+  
+  .right::before {
+    left: 107px;
+  }
+  .container::after {
+    right: -25px;
+    font-size: 20px; 
+  }
+
+  .story-one::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4b5";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-two::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f460";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-three::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3a0";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-four::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3ee";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-five::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4e1";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .timeline::after {
+    background-color: #4F4F51;
+    width: 2px;
+    bottom: 150px;
+    top: 85px;
+  }
+  
+  .booking h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+ .first-row-1 .form-control{
+    width: 400px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .second-row-1 .form-control {
+    width: 400px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .first-row-2 .form-control {
+    width: 400px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .second-row-2 .form-control {
+    width: 400px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+
+  .button{
+    position: relative;
+  }
+
+  .book-btn {
+    position: absolute;
+    left: 47%;
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 90px;
+  }
+
+  .third-row {
+    margin: 0 auto;
+  }
+
+  .footer {
+    margin-top: 100px;
+    height: 300px;
+    background-color: #F9F9F9;
+    padding-top: 100px;
+  }
+
+  .left-footer ,.righ-footer-1,.right-footer-2{
+    height: 200px;
+  }
+
+  .opening-hours {
+    margin-left: 50px;
+  }
+
+  .opening-hours p,h5{
+    margin-bottom: 20px;
+  }
+
+  .opening-hours p {
+    border-bottom:1px solid #000000;
+    width: 500px;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .our-clinic {
+    margin-left: 20px;
+  }
+
+  .our-clinic a {
+    color: #0000;
+  }
+
+  .socials p{
+    margin-top: 85px;
+    float: right;
+    margin-right: 50px;
+  }
+
+  .copyright {
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .date-left {
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+    margin-right: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .left-sidebar {
+    margin-top: 80px;
+  }
+
+  .right-sidebar {
+    margin-top: 80px;
+  }
+
+  .personal-info {
+    width: 50%;
+    height: 220px;
+    padding: 30px 50px 0px 50px
+  }
+
+  .personal-info p {
+    font-size: 14px;
+  }
+
+  .personal-info h3 {
+    font-size: 35px;
+  }
+
+  .btn {
+    width: 150px;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  .fa {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .image-container-1 {
+    height: 400px;
+  }
+
+  .image-container-1 .image-1 {
+    height: 400px;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+    margin: 0px auto;
+  }
+
+  .circle-info {
+    padding: 30px 10px 20px 60px;
+  }
+
+  .timeline::after {
+    background-color: #4F4F51;
+    width: 2px;
+    bottom: 150px;
+    top: 85px;
+  }
+
+  .container::after {
+    right: -25;
+  }
+
+  .right::after {
+    left:-25;
+  }
+
+  .left::before {
+    right: 79px;
+  }
+
+  .content {
+    width: 350px;
+  }
+
+  .booking h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+ .first-row-1 .form-control{
+    width: 400px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .second-row-1 .form-control {
+    width: 400px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .first-row-2 .form-control {
+    width: 400px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .second-row-2 .form-control {
+    width: 400px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+
+  .third-row {
+    margin: 0 auto;
+    margin-left: 80px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    height: 300px;
+    background-color: #F9F9F9;
+    padding-top: 100px;
+  }
+
+  .left-footer ,.righ-footer-1,.right-footer-2{
+    height: 200px;
+  }
+
+  .opening-hours {
+    margin-left: 50px;
+  }
+
+  .opening-hours p,h5{
+    margin-bottom: 20px;
+  }
+
+  .opening-hours p {
+    border-bottom:1px solid #0000;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .our-clinic {
+    margin-left: 20px;
+  }
+
+  .our-clinic a {
+    color: #0000;
+  }
+
+  .socials p{
+    margin-top: 45px;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .copyright {
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .story-one::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4b5";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-two::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f460";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-three::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3a0";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-four::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3ee";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-five::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4e1";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }  
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  
+  .left-sidebar {
+    margin-top: 60px;
+  }
+
+  .right-sidebar {
+    margin-top: 60px;
+  }
+
+  .personal-info {
+    width: 50%;
+    height: 210px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .personal-info p {
+    font-size: 12px;
+  }
+
+  .personal-info h3 {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 150px;
+    font-size: 15px;
+    padding: 0px;
+  }
+
+  .fa {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .image-container-1 {
+    height: 400px;
+  }
+
+  .image-container-1 .image-1 {
+    height: 400px;
+  }
+
+  .image-container-2 .img-1 {
+    padding: 0px 10px 0px 30px;
+  }
+
+  .image-container-2 .img-2 {
+    padding: 0px 30px 0px 10px;
+  }
+
+  .circle{
+    width: 250px;
+    height: 250px;
+    margin: 0px auto;
+  }
+
+  .circle-info {
+    padding: 30px 55px 10px 53px;
+  }
+
+  .container {
+    padding: 10px 53px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    height: 200px;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+
+  .left::before {
+    right: 43px;
+  }
+  
+  .right::before {
+    left: 45px;
+  }
+
+  .content {
+    width: 265px;
+    height: 180px;
+  }
+
+  .timeline::after {
+    background-color: #4F4F51;
+    width: 2px;
+    bottom: 150px;
+    top: 85px;
+  }
+
+  .container::after {
+    right: -25;
+  }
+
+  .right::after {
+    left:-25;
+  }
+
+  .content .title-section {
+    font-size: 20px;
+  }
+
+  .booking h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .first-row-1 .form-control{
+    width: 200px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .second-row-1 .form-control {
+    width: 200px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .first-row-2 .form-control {
+    width: 200px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .second-row-2 .form-control {
+    width: 200px;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+
+  .third-row {
+    margin: 0 auto;
+  }
+
+  .button{
+    position: relative;
+  }
+
+  .book-btn {
+    position: absolute;
+    left: 43%;
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 90px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    height: 300px;
+    background-color: #F9F9F9;
+    padding-top: 100px;
+  }
+
+  .left-footer ,.righ-footer-1,.right-footer-2{
+    height: 200px;
+  }
+
+  .opening-hours {
+    margin-left: 30px;
+  }
+
+  .opening-hours p,h5{
+    margin-bottom: 20px;
+  }
+
+  .opening-hours p {
+    border-bottom:1px solid #0000;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .our-clinic {
+    margin-left: 20px;
+  }
+
+  .our-clinic a {
+    color: #0000;
+  }
+
+  .socials p{
+    margin-top: 30px;
+    float: right;
+    margin-right: -20px;
+  }
+
+  .copyright {
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  .story-one::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4b5";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-two::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f460";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-three::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3a0";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-four::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3ee";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-five::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4e1";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .personal-info {
+    clear: both;
+    position: relative;
+  }
+
+  .image-container-1 {
+    height: 442px;
+  }
+
+  .circle-info {
+    padding: 30px 10px 20px 60px;
+  }
+
+  .right-sidebar {
+    margin: 0px auto;
+  }  
+
+  .circle {
+    height: 250px;
+    width: 250px;
+    margin: 0px auto;
+  }
+
+  .image-container-2 .img-1 {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .image-container-2 .img-2 {
+    padding: 0px 0px 0px 10px;
+  }
+
+  .left-sidebar {
+    margin-top: 65px;
+  }
+
+  .right-sidebar {
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .fa {
+    margin-left: 18px;
+    font-size: 16px;
+  }
+
+  .nav-title {
+    font-size: 20px;
+    padding-left: 62px;
+    font-weight: bold;
+  }
+
+  .nav-sub-title {
+    font-size: 10px;
+    padding-left: 72px;
+    color: #4F4F51;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+
+  .container::before {
+    left: 61px;
+    border: medium solid #FFFFFF;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #000000 transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 5px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .content {
+    width: 225px;
+    height: 196px;
+  }
+
+  .content .title-section {
+    font-size: 15px;
+  }
+
+  .timeline::after {
+    background-color: #4F4F51;
+    width: 2px;
+    bottom: 150px;
+    top: 85px;
+  }
+
+  .form-control {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+
+  .booking h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  .button{
+    position: relative;
+  }
+
+  .book-btn {
+    position: absolute;
+    left: 25%;
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 150px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: #F9F9F9;
+  }
+
+  .left-footer,.righ-footer-1,.right-footer-2{
+    height: 150px;
+  }
+
+  .our-clinic {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .opening-hours p,h5{
+    margin-bottom: 20px;
+  }
+
+  .opening-hours p {
+    border-bottom:1px solid #000000;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .opening-hours,.our-clinic,.socials {
+    font-size: 12px;
+  }
+
+  .our-clinic a {
+    color: #0000;
+  }
+
+  .socials p{
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+
+  .copyright {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  .story-one::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4b5";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-two::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f460";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-three::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3a0";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+
+  .story-four::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f3ee";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+  
+  .story-five::after  {
+    font-family: bootstrap-icons !important;
+    content: "\f4e1";
+    padding: 5px 0px 0px 11px;
+    font-size: 27px;
+    color:#257EF6;
+  }
+}
+
