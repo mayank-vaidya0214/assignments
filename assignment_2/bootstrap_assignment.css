@@ -11,11 +11,15 @@ p {
   color: #9A9C9D;
 }
 
+.navbar-nav a {
+  color:#9A9C9D;
+}
+
 .navbar-toggler {
   float: right;
 }  
 
-.nav-item {
+.navbar-nav li {
   padding: 0px 10px 0px 10px;
 }
 
@@ -34,7 +38,6 @@ p {
   font-size: 25px;
   color: #2477F6;
   text-align: center;
- 
 }
 
 .navbar-brand .navbar-sub-title {
@@ -54,12 +57,12 @@ p {
 }
 
 .personal-info {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #FFFFFF;
-    padding: 10px;
-    float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  padding: 10px;
+  float: right;
 }
 
 .personal-info p {
@@ -82,7 +85,7 @@ p {
 }
 
 .circle-info .exp {
-  padding-left: 10px  ;
+  padding-left: 10px;
   font-size: 20px;
   color:#727983;
 }
@@ -91,7 +94,7 @@ p {
   margin-top: 50px;
 }
 
-.image-container-2 img{
+.image-container-2 .img-1,.img-2 {
   float: left;
 } 
 
@@ -121,7 +124,7 @@ p {
   width: 90px;
 }
 
-.description-section {
+.description {
   color: #9A9C9D;
 }
 
@@ -169,17 +172,17 @@ p {
   box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
 }
 
-.left {
+.timeline-left {
   left: 0;
   margin: 0;
 }
 
-.right {
+.timeline-right {
   left: 50%;
   margin: 0;
 }
 
-.left::before {
+.timeline-left::before {
   border: medium solid #0000;
   border-color: transparent transparent transparent #000000;
   border-width: 10px 0 10px 10px;
@@ -192,7 +195,7 @@ p {
   z-index: 1;
 }
 
-.right::before {
+.timeline-right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -205,7 +208,7 @@ p {
   border-color: transparent #000000 transparent transparent;
 }
 
-.right::after {
+.timeline-right::after {
   left: -16px;
 }
 
@@ -219,7 +222,7 @@ p {
   width: 400px;
 }
 
-.content .title-section {
+.content .title {
   background-color: #000000;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -229,48 +232,35 @@ p {
   font-weight: bold;
 }
 
-.content .title-section, .content .description-section {
+.content .title, .content .description {
   padding: 10px 20px;
 }
 
-.story-one::after  {
+.story::after {
   font-family: bootstrap-icons !important;
+  padding: 5px 0px 0px 11px;
+  font-size: 27px;
+  color:#257EF6;
+}
+
+.story-one::after {
   content: "\f4b5";
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
-  color:#257EF6;
 }
 
-.story-two::after  {
-  font-family: bootstrap-icons !important;
+.story-two::after {
   content: "\f460";
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
-  color:#257EF6;
 }
 
-.story-three::after  {
-  font-family: bootstrap-icons !important;
+.story-three::after {
   content: "\f3a0";
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
-  color:#257EF6;
 }
 
-.story-four::after  {
-  font-family: bootstrap-icons !important;
+.story-four::after {
   content: "\f3ee";
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
-  color:#257EF6;
 }
 
-.story-five::after  {
-  font-family: bootstrap-icons !important;
+.story-five::after {
   content: "\f4e1";
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
-  color:#257EF6;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -301,11 +291,11 @@ p {
     height: 571px;
   }
 
-  .left-sidebar {
+  .safety-description {
     margin-top: 100px;
   }
 
-  .right-sidebar {
+  .experience {
     margin-top: 100px;
   }
 
@@ -343,7 +333,7 @@ p {
     height: 200px;
   }
 
-  .right::after {
+  .timeline-right::after {
     left: -25px;
   }
 
@@ -351,13 +341,14 @@ p {
     width: 400px;
   }
 
-  .left::before {
+  .timeline-left::before {
     right: 75px;
   }
   
-  .right::before {
+  .timeline-right::before {
     left: 107px;
   }
+
   .container::after {
     right: -25px;
   }
@@ -380,34 +371,10 @@ p {
     margin: 0 auto;
   }
 
- .first-row-1 .form-control{
-    width: 400px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .second-row-1 .form-control {
-    width: 400px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .first-row-2 .form-control {
-    width: 400px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
-  .second-row-2 .form-control {
-    width: 400px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
   .form-control {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
+    width: 400px;
+    margin-bottom: 20px;
+    border-style: hidden;
     border-bottom-style: groove;
   }
 
@@ -424,8 +391,12 @@ p {
     width: 90px;
   }
 
-  .third-row {
+  .user-message {
     margin: 0 auto;
+  }
+
+  .user-message .form-control {
+     width: 800px;
   }
 
   .footer {
@@ -435,7 +406,7 @@ p {
     padding-top: 100px;
   }
 
-  .left-footer ,.righ-footer-1,.right-footer-2{
+  .timing-details ,.clinic-details,.social-details { 
     height: 200px;
   }
 
@@ -461,7 +432,7 @@ p {
   }
 
   .our-clinic a {
-    color: #0000;
+    color: #000000;
   }
 
   .socials p{
@@ -474,22 +445,15 @@ p {
     margin: 0px;
     font-size: 15px;
   }
-
-  .date-left {
-    display: inline-block;
-    float: right;
-    margin-top: 25px;
-    margin-right: 350px;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   
-  .left-sidebar {
+  .safety-description {
     margin-top: 80px;
   }
 
-  .right-sidebar {
+  .experience {
     margin-top: 80px;
   }
 
@@ -547,11 +511,11 @@ p {
     right: -25;
   }
 
-  .right::after {
+  .timeline-right::after {
     left:-25;
   }
 
-  .left::before {
+  .timeline-left::before {
     right: 79px;
   }
 
@@ -570,40 +534,20 @@ p {
     margin: 0 auto;
   }
 
- .first-row-1 .form-control{
-    width: 400px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .second-row-1 .form-control {
-    width: 400px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .first-row-2 .form-control {
-    width: 400px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
-  .second-row-2 .form-control {
-    width: 400px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
   .form-control {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
+    width: 400px;
+    margin-bottom: 20px;
+    border-style: hidden;
     border-bottom-style: groove;
   }
 
-  .third-row {
+  .user-message {
     margin: 0 auto;
     margin-left: 80px;
+  }
+
+  .user-message .form-control {
+    width: 800px;
   }
 
   .footer {
@@ -613,7 +557,7 @@ p {
     padding-top: 100px;
   }
 
-  .left-footer ,.righ-footer-1,.right-footer-2{
+  .timing-details ,.clinic-details, .social-details {
     height: 200px;
   }
 
@@ -638,7 +582,7 @@ p {
   }
 
   .our-clinic a {
-    color: #0000;
+    color: #000000;
   }
 
   .socials p{
@@ -655,11 +599,11 @@ p {
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
   
-  .left-sidebar {
+  .safety-description {
     margin-top: 60px;
   }
 
-  .right-sidebar {
+  .experience {
     margin-top: 60px;
   }
 
@@ -704,7 +648,7 @@ p {
     padding: 0px 30px 0px 10px;
   }
 
-  .circle{
+  .circle {
     width: 250px;
     height: 250px;
     margin: 0px auto;
@@ -722,15 +666,15 @@ p {
     height: 200px;
   }
 
-  .right::after {
+  .timeline-right::after {
     left: -16px;
   }
 
-  .left::before {
+  .timeline-left::before {
     right: 43px;
   }
   
-  .right::before {
+  .timeline-right::before {
     left: 45px;
   }
 
@@ -750,11 +694,11 @@ p {
     right: -25;
   }
 
-  .right::after {
+  .timeline-right::after {
     left:-25;
   }
 
-  .content .title-section {
+  .content .title {
     font-size: 20px;
   }
 
@@ -769,42 +713,22 @@ p {
     margin: 0 auto;
   }
 
-  .first-row-1 .form-control{
-    width: 200px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .second-row-1 .form-control {
-    width: 200px;
-    float: right;
-    margin-bottom: 20px;
-  }
-
-  .first-row-2 .form-control {
-    width: 200px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
-  .second-row-2 .form-control {
-    width: 200px;
-    float: left;
-    margin-bottom: 20px;
-  }
-
-  .form-control {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: groove;
-  }
-
-  .third-row {
+  .user-message {
     margin: 0 auto;
   }
 
-  .button{
+  .user-message .form-control {
+    width: 425px;
+  }
+
+  .form-control {
+    width: 200px;
+    margin-bottom: 20px;
+    border-style: hidden;
+    border-bottom-style: groove;
+  }
+
+  .button {
     position: relative;
   }
 
@@ -824,7 +748,7 @@ p {
     padding-top: 100px;
   }
 
-  .left-footer ,.righ-footer-1,.right-footer-2{
+  .timing-details ,.clinic-details, .social-details {
     height: 200px;
   }
 
@@ -849,7 +773,7 @@ p {
   }
 
   .our-clinic a {
-    color: #0000;
+    color: #000000;
   }
 
   .socials p{
@@ -878,8 +802,9 @@ p {
     padding: 30px 10px 20px 60px;
   }
 
-  .right-sidebar {
+  .experience {
     margin: 0px auto;
+    margin-top: 20px;
   }  
 
   .circle {
@@ -896,12 +821,8 @@ p {
     padding: 0px 0px 0px 10px;
   }
 
-  .left-sidebar {
+  .safety-description {
     margin-top: 65px;
-  }
-
-  .right-sidebar {
-    margin-top: 20px;
   }
 
   .btn {
@@ -938,7 +859,7 @@ p {
     margin-bottom: 20px;
   }
   
-  .right::after {
+  .timeline-right::after {
     left: -16px;
   }
 
@@ -949,11 +870,11 @@ p {
     border-color: transparent #000000 transparent transparent;
   }
 
-  .left::after, .right::after {
+  .timeline-left::after, .timeline-right::after {
     left: 5px;
   }
 
-  .right {
+  .timeline-right {
     left: 0%;
   }
 
@@ -962,7 +883,7 @@ p {
     height: 196px;
   }
 
-  .content .title-section {
+  .content .title {
     font-size: 15px;
   }
 
@@ -974,9 +895,7 @@ p {
   }
 
   .form-control {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
+    border-style: hidden;
     border-bottom-style: groove;
   }
 
@@ -1005,8 +924,12 @@ p {
     background-color: #F9F9F9;
   }
 
-  .left-footer,.righ-footer-1,.right-footer-2{
+  .timing-details, .clinic-details, .social-details {
     height: 150px;
+  }
+
+  .social-details {
+    margin-top: 20px;
   }
 
   .our-clinic {
@@ -1031,7 +954,7 @@ p {
   }
 
   .our-clinic a {
-    color: #0000;
+    color: #000000;
   }
 
   .socials p{

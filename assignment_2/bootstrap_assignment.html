@@ -5,25 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Assignment</title>
-  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <!-- Popper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/ecbad731bb.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- <script src="https://use.fontawesome.com/ecbad731bb.js"></script> -->
   <link rel="stylesheet" href="bootstrap_assignment.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light col-12">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-brand  d-block d-md-none mx-auto">
       <div class="nav-title">Medic Care</div>
       <span class="nav-sub-title">Health Specialist</span>
@@ -33,27 +30,27 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav mx-auto text-center">
-        <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
+        <li>
+          <a href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+        <li>
+          <a href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Timeline</a>
+        <li>
+          <a href="#">Timeline</a>
         </li>
-        <li class="nav-item d-none d-sm-block">
+        <li class="d-none d-sm-block">
           <div class="nav-title">Medic Care</div>
           <span class="nav-sub-title">Health Specialist</span>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Testimonial</a>
+        <li>
+          <a href="#">Testimonial</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Booking</a>
+        <li>
+          <a href="#">Booking</a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+        <li>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -63,7 +60,7 @@
       <div class=" image-container-1 col-12">
         <img src="Archive/images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg" alt="Doctors-hand"
           class="image-1">
-        <div class="personal-info col-12">
+        <div class="personal-info">
           <h3>Better <span class="days">days</span></h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eos fugit corrupti exercitationem,
             expedita
@@ -74,7 +71,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="left-sidebar col-md-6 col-12">
+      <div class="safety-description col-md-6">
         <h5>Meet Dr.Carson</h5>
         <p>Protect yourself and others by wearing masks and washing hands frequently. Outdoor is safer than indoor for
           gathering and
@@ -85,7 +82,7 @@
           can support us a
           little via PayPal if this template is good and useful for your work. </p>
       </div>
-      <div class="right-sidebar col-md-6 col-12">
+      <div class="experience col-md-6">
         <div class="circle">
           <div class="circle-info">
             <span>
@@ -98,45 +95,45 @@
     <div class="row">
       <div class="image-container-2">
         <img src="Archive/images/gallery/medium-shot-man-getting-vaccine.jpg" alt="left-image"
-          class="img-1 col-md-6 col-6">
+          class="img-1 col-6">
         <img src="Archive/images/gallery/female-doctor-with-presenting-hand-gesture.jpg" alt="right-image"
-          class=" img-2 col-md-6 col-6">
+          class="img-2 col-6">
       </div>
     </div>
     <div class="timeline">
       <h3>Our Timeline</h3>
-      <div class="container left story-one">
+      <div class="container timeline-left story-one story">
         <div class="content">
-          <div class="title-section">Get the vaccine</div>
-          <div class="description-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
+          <div class="title">Get the vaccine</div>
+          <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
             et. Est, incidunt quo praesentium vero</div>
         </div>
       </div>
-      <div class="container right story-two">
+      <div class="container timeline-right story-two story">
         <div class="content">
-          <div class="title-section">Consulting your health</div>
-          <div class="description-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
+          <div class="title">Consulting your health</div>
+          <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
             et. Est, incidunt quo praesentium vero</div>
         </div>
       </div>
-      <div class="container left story-three">
+      <div class="container timeline-left story-three story">
         <div class="content">
-          <div class="title-section">Certified Nurse</div>
-          <div class="description-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
+          <div class="title">Certified Nurse</div>
+          <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
             et. Est, incidunt quo praesentium vero</div>
         </div>
       </div>
-      <div class="container right story-four">
+      <div class="container timeline-right story-four story">
         <div class="content">
-          <div class="title-section">COVID-19 Hospitals</div>
-          <div class="description-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
+          <div class="title">COVID-19 Hospitals</div>
+          <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
             et. Est, incidunt quo praesentium vero.</div>
         </div>
       </div>
-      <div class="container left story-five">
+      <div class="container timeline-left story-five story">
         <div class="content">
-          <div class="title-section">Freelance Nursing</div>
-          <div class="description-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
+          <div class="title">Freelance Nursing</div>
+          <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia atque ad aliquam 
             et. Est, incidunt quo praesentium vero</div>
         </div>
       </div>
@@ -145,23 +142,23 @@
       <h3>Book an appointment</h3>
       <form class="booking-form">
         <div class="row">
-          <div class="first-row-1 col-md-6">
-            <input type="text" class="form-control" id="name" placeholder="Full Name" name="name">
+          <div class="user-name col-md-6">
+            <input type="text" class="form-control float-right" id="name" placeholder="Full Name" name="name">
           </div>
-          <div class="first-row-2 col-md-6">
-            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-          </div>
-        </div>
-        <div class="row">
-          <div class="second-row-1 col-md-6">
-            <input type="text" class="form-control" id="phone" placeholder="Phone 123-456-789" name="phone">
-          </div>
-          <div class="second-row-2 col-md-6">
-            <input type="date" class="form-control" id="date" placeholder="dd/mm/yyyy" name="date">
+          <div class="user-email col-md-6">
+            <input type="email" class="form-control float-left" id="email" placeholder="Enter Email" name="email">
           </div>
         </div>
         <div class="row">
-          <div class="third-row col-md-7">
+          <div class="user-contact col-md-6">
+            <input type="text" class="form-control float-right" id="phone" placeholder="Phone 123-456-789" name="phone">
+          </div>
+          <div class="user-birth-date col-md-6">
+            <input type="date" class="form-control float-left" id="date" placeholder="dd/mm/yyyy" name="date">
+          </div>
+        </div>
+        <div class="row">
+          <div class="user-message col-md-7">
             <textarea class="form-control" id="message" rows="5" placeholder="Additional Message" name="message"></textarea>
           </div>
         </div>
@@ -172,7 +169,7 @@
     </div>
     <div class="footer">
       <div class="row">
-        <div class="left-footer col-md-6">
+        <div class="timing-details col-md-6">
           <div class="opening-hours">
             <h5>Opening Hours</h5>
             <p>Sunday : Closed</p>
@@ -180,7 +177,7 @@
             <p>Saturday <span class="footer-span">10:30 AM - 5:30 PM</span></p>
           </div>
         </div>
-        <div class="right-footer-1 col-md-3">
+        <div class="clinic-details col-md-3">
             <div class="our-clinic">
               <h5>Our Clinic</h5>
               <p><a href="#">hello@company.co</a></p>
@@ -188,7 +185,7 @@
                 <br> <span>CA 92123</span></p>
             </div>
         </div>
-        <div class="right-footer-2 col-md-3">
+        <div class="social-details col-md-3">
           <div class="socials">
             <h5>Socials</h5>
             <i class="bi bi-facebook"></i>
