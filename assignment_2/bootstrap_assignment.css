@@ -7,12 +7,8 @@
   font-family: 'bootstrap-icons';
 }
 
-p {
-  color: #9A9C9D;
-}
-
-.navbar-nav a {
-  color:#9A9C9D;
+.navbar-nav a, p {
+  color: #9E9999;
 }
 
 .navbar-toggler {
@@ -38,11 +34,6 @@ p {
   font-size: 25px;
   color: #2477F6;
   text-align: center;
-}
-
-.navbar-brand .navbar-sub-title {
-  color: #4F4F51;
-  font-size: 10px;
 }
 
 .image-1 {
@@ -71,7 +62,7 @@ p {
 
 .circle {
   border-radius:100%;
-    box-shadow: 0px 0px 35px rgba(0,0,0,40%);
+    box-shadow: 0px 0px 35px rgba(0,0,0,15%);
 }
 
 .circle-info h1 {
@@ -79,14 +70,15 @@ p {
   font-weight: bold;
 }
 
-.circle-info .years{
-  font-size: 14px;
+.circle-info .years { 
+  font-size: 23px;
   color: #727983;
 }
 
 .circle-info .exp {
   padding-left: 10px;
   font-size: 20px;
+  font-weight: bold;
   color:#727983;
 }
 
@@ -109,19 +101,20 @@ p {
   width: 100px;
   height: 30px;
   font-size: 10px;
+  border-radius: 0px;
 }
 
-.button{
+.button {
   position: relative;
 }
 
 .book-btn {
   position: absolute;
-  left: 50%;
+  left: 43%;
   margin-top: 30px;
   color: #FFFFFF;
   background-color: #000000;
-  width: 90px;
+  width: 150px;
 }
 
 .description {
@@ -132,10 +125,10 @@ p {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 125px;
 }
 
-.timeline h3 {
+.timeline h1 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -169,7 +162,7 @@ p {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
 }
 
 .timeline-left {
@@ -263,46 +256,106 @@ p {
   content: "\f4e1";
 }
 
+.timeline::after {
+  background-color: #9E9999;
+  width: 1px;
+  bottom: 150px;
+  top: 110px;
+}
+
+.booking h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.bi-phone {
+  margin-left: 40px;
+  font-size: 20px;
+  color: #9E9999;
+}
+
+.bi span {
+  color: #9E9999;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.our-clinic {
+  margin-left: 20px;
+} 
+
+.our-clinic a {
+  color: #000000;
+}
+
+.footer {
+  background-color: #F9F9F9;
+}
+
+.opening-hours p {
+  border-bottom:1px solid #000000;
+}
+
+.form-control {
+  border-style: hidden;
+  border-bottom-style: groove;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .navbar-nav li {
+    padding: 0px 50px 0px 50px;
+  }
+  
   .personal-info {
     width: 50%;
     height: 270px;
-    padding: 50px 50px 0px  50px;
+    padding: 13px 50px 0px  50px;
   }
 
   .personal-info p {
-    font-size: 17px;
-  }
-
-  .personal-info h3 {
-    font-size: 45px;
-  }
-
-  .fa {
-    margin-left: 45px;
     font-size: 20px;
   }
 
+  .personal-info h3 {
+    font-size: 65px;
+  }
+
   .image-container-1 {
-    height: 572px;
+    height: 651px;
   }
 
   .image-container-1 .image-1 {
-    height: 571px;
+    height: 650px;
   }
 
-  .safety-description {
-    margin-top: 100px;
+  .circle-info h1 {
+   font-size: 150px;
   }
 
-  .experience {
+  .circle-info .years { 
+    font-size: 25px;
+  }
+
+  .circle-info .exp {
+    font-size: 25px;
+    padding-left: 30px;
+  }
+
+  .safety-description, .experience {
     margin-top: 100px;
+  } 
+
+  .safety-description p {
+    font-size: 20px;
   }
 
   .circle {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: 0px auto;
+    padding: 20px 0px 0px 20px;
   }
 
   .image-container-2 .img-1 {
@@ -316,19 +369,18 @@ p {
   }
 
   .circle-info {
-    padding: 30px 10px 20px 60px;
+    padding: 9px 10px 20px 25px;
   }
 
   .btn {
-    width: 150px;
-    font-size: 16px;
+    width: 170px;
+    font-size: 23px;
     padding: 0px;
+    height: 40;
   }
 
   .container {
     padding: 10px 116px;
-    position: relative;
-    background-color: inherit;
     width: 50%;
     height: 200px;
   }
@@ -339,6 +391,11 @@ p {
 
   .content {
     width: 400px;
+    height: 200px;
+  }
+
+  .description {
+    font-size: 20px;
   }
 
   .timeline-left::before {
@@ -353,19 +410,6 @@ p {
     right: -25px;
   }
 
-  .timeline::after {
-    background-color: #4F4F51;
-    width: 2px;
-    bottom: 150px;
-    top: 85px;
-  }
-  
-  .booking h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-  }
-
   .booking {
     margin-top: 50px;
     margin: 0 auto;
@@ -374,21 +418,10 @@ p {
   .form-control {
     width: 400px;
     margin-bottom: 20px;
-    border-style: hidden;
-    border-bottom-style: groove;
   }
 
-  .button{
+  .button {
     position: relative;
-  }
-
-  .book-btn {
-    position: absolute;
-    left: 47%;
-    margin-top: 30px;
-    color: #FFFFFF;
-    background-color: #000000;
-    width: 90px;
   }
 
   .user-message {
@@ -400,26 +433,24 @@ p {
   }
 
   .footer {
-    margin-top: 100px;
+    margin-top: 165px;
     height: 300px;
-    background-color: #F9F9F9;
-    padding-top: 100px;
   }
 
   .timing-details ,.clinic-details,.social-details { 
     height: 200px;
+    margin-top: 80px;
   }
 
   .opening-hours {
     margin-left: 50px;
   }
 
-  .opening-hours p,h5{
+  .opening-hours p,h5 {
     margin-bottom: 20px;
   }
 
   .opening-hours p {
-    border-bottom:1px solid #000000;
     width: 500px;
   }
 
@@ -427,15 +458,7 @@ p {
     float: right;
   }
 
-  .our-clinic {
-    margin-left: 20px;
-  }
-
-  .our-clinic a {
-    color: #000000;
-  }
-
-  .socials p{
+  .socials p {
     margin-top: 85px;
     float: right;
     margin-right: 50px;
@@ -448,7 +471,10 @@ p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  
+  .navbar-nav li {
+    padding: 0px 25px 0px 25px;
+  }
+
   .safety-description {
     margin-top: 80px;
   }
@@ -468,18 +494,13 @@ p {
   }
 
   .personal-info h3 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .btn {
     width: 150px;
     font-size: 15px;
     padding: 0px;
-  }
-
-  .fa {
-    margin-left: 20px;
-    font-size: 20px;
   }
 
   .image-container-1 {
@@ -500,13 +521,6 @@ p {
     padding: 30px 10px 20px 60px;
   }
 
-  .timeline::after {
-    background-color: #4F4F51;
-    width: 2px;
-    bottom: 150px;
-    top: 85px;
-  }
-
   .container::after {
     right: -25;
   }
@@ -523,12 +537,6 @@ p {
     width: 350px;
   }
 
-  .booking h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-  }
-
   .booking {
     margin-top: 50px;
     margin: 0 auto;
@@ -537,8 +545,6 @@ p {
   .form-control {
     width: 400px;
     margin-bottom: 20px;
-    border-style: hidden;
-    border-bottom-style: groove;
   }
 
   .user-message {
@@ -551,9 +557,8 @@ p {
   }
 
   .footer {
-    margin-top: 100px;
+    margin-top: 165px;
     height: 300px;
-    background-color: #F9F9F9;
     padding-top: 100px;
   }
 
@@ -565,27 +570,15 @@ p {
     margin-left: 50px;
   }
 
-  .opening-hours p,h5{
+  .opening-hours p,h5 {
     margin-bottom: 20px;
-  }
-
-  .opening-hours p {
-    border-bottom:1px solid #0000;
   }
 
   .opening-hours .footer-span {
     float: right;
   }
 
-  .our-clinic {
-    margin-left: 20px;
-  }
-
-  .our-clinic a {
-    color: #000000;
-  }
-
-  .socials p{
+  .socials p {
     margin-top: 45px;
     float: right;
     margin-right: 22px;
@@ -618,18 +611,13 @@ p {
   }
 
   .personal-info h3 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .btn {
     width: 150px;
     font-size: 15px;
     padding: 0px;
-  }
-
-  .fa {
-    margin-left: 20px;
-    font-size: 20px;
   }
 
   .image-container-1 {
@@ -660,8 +648,6 @@ p {
 
   .container {
     padding: 10px 53px;
-    position: relative;
-    background-color: inherit;
     width: 50%;
     height: 200px;
   }
@@ -683,13 +669,6 @@ p {
     height: 180px;
   }
 
-  .timeline::after {
-    background-color: #4F4F51;
-    width: 2px;
-    bottom: 150px;
-    top: 85px;
-  }
-
   .container::after {
     right: -25;
   }
@@ -700,12 +679,6 @@ p {
 
   .content .title {
     font-size: 20px;
-  }
-
-  .booking h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
   }
 
   .booking {
@@ -724,27 +697,15 @@ p {
   .form-control {
     width: 200px;
     margin-bottom: 20px;
-    border-style: hidden;
-    border-bottom-style: groove;
   }
 
   .button {
     position: relative;
   }
 
-  .book-btn {
-    position: absolute;
-    left: 43%;
-    margin-top: 30px;
-    color: #FFFFFF;
-    background-color: #000000;
-    width: 90px;
-  }
-
   .footer {
-    margin-top: 100px;
+    margin-top: 165px;
     height: 300px;
-    background-color: #F9F9F9;
     padding-top: 100px;
   }
 
@@ -756,27 +717,15 @@ p {
     margin-left: 30px;
   }
 
-  .opening-hours p,h5{
+  .opening-hours p,h5 {
     margin-bottom: 20px;
-  }
-
-  .opening-hours p {
-    border-bottom:1px solid #0000;
   }
 
   .opening-hours .footer-span {
     float: right;
   }
 
-  .our-clinic {
-    margin-left: 20px;
-  }
-
-  .our-clinic a {
-    color: #000000;
-  }
-
-  .socials p{
+  .socials p {
     margin-top: 30px;
     float: right;
     margin-right: -20px;
@@ -789,9 +738,21 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .bi-phone {
+    font-size: 12px;
+  }
+
+  .bi span {
+    font-size: 12px;
+  }
+
   .personal-info {
     clear: both;
     position: relative;
+  }
+
+  .personal-info h3 {
+    font-size : 35px
   }
 
   .image-container-1 {
@@ -831,21 +792,14 @@ p {
     padding: 0px;
   }
 
-  .fa {
-    margin-left: 18px;
-    font-size: 16px;
-  }
-
   .nav-title {
     font-size: 20px;
-    padding-left: 62px;
-    font-weight: bold;
+    padding-left: 50px;
   }
 
   .nav-sub-title {
     font-size: 10px;
     padding-left: 72px;
-    color: #4F4F51;
   }
 
   .timeline::after {
@@ -858,7 +812,11 @@ p {
     padding-right: 25px;
     margin-bottom: 20px;
   }
-  
+
+  .timeline {
+    margin-top: 50px;
+  }
+
   .timeline-right::after {
     left: -16px;
   }
@@ -887,62 +845,37 @@ p {
     font-size: 15px;
   }
 
-  .timeline::after {
-    background-color: #4F4F51;
-    width: 2px;
-    bottom: 150px;
-    top: 85px;
-  }
-
-  .form-control {
-    border-style: hidden;
-    border-bottom-style: groove;
-  }
-
-  .booking h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-  }
-
-  .button{
-    position: relative;
-  }
-
   .book-btn {
-    position: absolute;
     left: 25%;
     margin-top: 30px;
-    color: #FFFFFF;
-    background-color: #000000;
     width: 150px;
+  }
+
+  .circle-info .years {
+    font-size: 20px;
+  }
+
+  .booking h1 {
+    font-size:30px;
   }
 
   .footer {
     margin-top: 100px;
     padding-top: 50px;
-    background-color: #F9F9F9;
   }
 
   .timing-details, .clinic-details, .social-details {
     height: 150px;
-  }
-
-  .social-details {
     margin-top: 20px;
   }
 
   .our-clinic {
-    margin-top: 20px;
+    margin-left: 0px;
     margin-bottom: 30px;
   }
 
-  .opening-hours p,h5{
+  .opening-hours p,h5 {
     margin-bottom: 20px;
-  }
-
-  .opening-hours p {
-    border-bottom:1px solid #000000;
   }
 
   .opening-hours .footer-span {
@@ -953,11 +886,7 @@ p {
     font-size: 12px;
   }
 
-  .our-clinic a {
-    color: #000000;
-  }
-
-  .socials p{
+  .socials p {
     margin-top: 30px;
     margin-right: -20px;
   }
