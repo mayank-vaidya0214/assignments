@@ -4,11 +4,14 @@
 } 
 
 .body {
-  font-family: 'bootstrap-icons';
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 1 rem
 }
 
 .navbar-nav a, p {
-  color: #9E9999;
+  color: #717275;
 }
 
 .navbar-toggler {
@@ -20,7 +23,7 @@
 }
 
 #navbarMenu .nav-title {
-  color: #2477F6;
+  color: #247CFF;
   font-size: 20px;
   font: bolder;
 }
@@ -32,7 +35,7 @@
 
 .navbar-brand .nav-title {
   font-size: 25px;
-  color: #2477F6;
+  color: #247CFF;
   text-align: center;
 }
 
@@ -66,7 +69,7 @@
 }
 
 .circle-info h1 {
-  color: #2477F6;
+  color: #247CFF;
   font-weight: bold;
 }
 
@@ -91,13 +94,13 @@
 } 
 
 .personal-info span {
-  color: #257EF6;
+  color: #247CFF;
 }
 
 .btn {
   background-color: #FFFFFF;
   border: 1px solid lightgray;
-  color: #257EF6;
+  color: #247CFF;
   width: 100px;
   height: 30px;
   font-size: 10px;
@@ -106,6 +109,8 @@
 
 .button {
   position: relative;
+  width: 100%;
+  height: 100px;
 }
 
 .book-btn {
@@ -206,13 +211,12 @@
 }
 
 .content {
-  border: 1px solid #4F4F51;
   background-color: #FFFFFF;
   position: relative;
   border-radius: 6px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,50%);
-  height: 150px;
-  width: 400px;
+  box-shadow: 0px 0px 50px rgb(0 0 0 / 30%);
+  /* height: 150px;
+  width: 400px; */
 }
 
 .content .title {
@@ -231,8 +235,8 @@
 
 .story::after {
   font-family: bootstrap-icons !important;
-  padding: 5px 0px 0px 11px;
-  font-size: 27px;
+  padding: 12px 0px 0px 18px;
+  font-size: 23px;
   color:#257EF6;
 }
 
@@ -257,10 +261,11 @@
 }
 
 .timeline::after {
-  background-color: #9E9999;
+  background-color: #EAEAEA;;
   width: 1px;
   bottom: 150px;
   top: 110px;
+  opacity: 0.6;
 }
 
 .booking h1 {
@@ -272,7 +277,7 @@
 .bi-phone {
   margin-left: 40px;
   font-size: 20px;
-  color: #9E9999;
+  color: #717275;
 }
 
 .bi span {
@@ -282,12 +287,9 @@
   font-weight: bold;
 }
 
-.our-clinic {
-  margin-left: 20px;
-} 
-
 .our-clinic a {
-  color: #000000;
+  color: #717275;
+  font-size: 16px;
 }
 
 .footer {
@@ -295,17 +297,33 @@
 }
 
 .opening-hours p {
-  border-bottom:1px solid #000000;
+  border-bottom:1px solid #EAEAEA;
+  ;
 }
 
 .form-control {
   border-style: hidden;
-  border-bottom-style: groove;
+  border-bottom-style: solid;
+}
+
+i {
+  color: #717275;
+}
+
+.timeline-left .title {
+  text-align: right;
+}
+
+.date-right, .date-left {
+  display: inline-block;
+  float: right;
+  color: #212529;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .navbar-nav li {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 35px 0px 35px;
   }
   
   .personal-info {
@@ -374,23 +392,23 @@
 
   .btn {
     width: 170px;
-    font-size: 23px;
-    padding: 0px;
+    font-size: 21px;
+    padding: 4px 25px 5px 25px;
     height: 40;
   }
 
   .container {
-    padding: 10px 116px;
+    padding: 10px 57px;
     width: 50%;
-    height: 200px;
+    height: 230px;
   }
 
   .timeline-right::after {
-    left: -25px;
+    left: -32px;
   }
 
   .content {
-    width: 400px;
+    width: 487px;
     height: 200px;
   }
 
@@ -399,15 +417,17 @@
   }
 
   .timeline-left::before {
-    right: 75px;
+    right: 47px;
   }
   
   .timeline-right::before {
-    left: 107px;
+    left: 47px;
   }
 
   .container::after {
-    right: -25px;
+    right: -28px;
+    width: 60px;
+    height: 60px;
   }
 
   .booking {
@@ -429,12 +449,13 @@
   }
 
   .user-message .form-control {
-     width: 800px;
+    width: 825px;
+    padding: 0px;
   }
 
   .footer {
-    margin-top: 165px;
-    height: 300px;
+    margin-top: 130px;
+    height: 400px;
   }
 
   .timing-details ,.clinic-details,.social-details { 
@@ -443,7 +464,7 @@
   }
 
   .opening-hours {
-    margin-left: 50px;
+    margin-left: 80px;
   }
 
   .opening-hours p,h5 {
@@ -452,6 +473,7 @@
 
   .opening-hours p {
     width: 500px;
+    padding: 3px 0px 20px 0px;
   }
 
   .opening-hours .footer-span {
@@ -460,13 +482,20 @@
 
   .socials p {
     margin-top: 85px;
-    float: right;
-    margin-right: 50px;
+    padding: 0px;
   }
 
   .copyright {
     margin: 0px;
     font-size: 15px;
+  }
+  .date-right {
+    margin-top: 30px;
+    margin-right: 395px;
+  }
+  .date-left {
+    margin-top: 35px;
+    margin-right: 654px;
   }
 }
 
@@ -522,11 +551,13 @@
   }
 
   .container::after {
-    right: -25;
+    right: -28px;
+    width: 60px;
+    height: 60px;
   }
 
   .timeline-right::after {
-    left:-25;
+    left:-32;
   }
 
   .timeline-left::before {
@@ -535,6 +566,7 @@
 
   .content {
     width: 350px;
+    height: auto;
   }
 
   .booking {
@@ -587,6 +619,14 @@
   .copyright {
     margin: 0px;
     font-size: 15px;
+  }
+  .date-right {
+    margin-top: 30px;
+    margin-right: 270px;
+  }
+  .date-left {
+    margin-top: 35px;
+    margin-right: 581px;
   }
 }
 
@@ -649,7 +689,7 @@
   .container {
     padding: 10px 53px;
     width: 50%;
-    height: 200px;
+    height: 235px;
   }
 
   .timeline-right::after {
@@ -666,11 +706,13 @@
 
   .content {
     width: 265px;
-    height: 180px;
+    height: auto;
   }
 
   .container::after {
-    right: -25;
+    right: -28px;
+    width: 60px;
+    height: 60px;
   }
 
   .timeline-right::after {
@@ -734,6 +776,14 @@
   .copyright {
     margin: 0px;
     font-size: 13px;
+  }
+  .date-right {
+    margin-top: 30px;
+    margin-right: 170px;
+  }
+  .date-left {
+    margin-top: 35px;
+    margin-right: 416px;
   }
 }
 
@@ -804,13 +854,14 @@
 
   .timeline::after {
     left: 31px;
+    top: 130px;
   }
 
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 52px;
   }
 
   .timeline {
@@ -837,14 +888,17 @@
   }
 
   .content {
-    width: 225px;
-    height: 196px;
+    width: auto;
+    height: auto;
   }
 
   .content .title {
     font-size: 15px;
   }
 
+  .story::after {
+    padding: 8px 0px 0px 13px;
+  }
   .book-btn {
     left: 25%;
     margin-top: 30px;
@@ -894,6 +948,14 @@
   .copyright {
     margin: 0px;
     font-size: 12px;
+  }
+  .timeline-left .title {
+    text-align: justify;
+  }
+  .date-right, .date-left{
+    float: none;
+    display: block;
+    margin-left: 68px;
   }
 }
 
