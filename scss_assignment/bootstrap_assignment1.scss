@@ -1,0 +1,643 @@
+@import"styling";
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .navbar-nav li {
+    padding: 0px 35px 0px 35px;
+  }
+
+  .personal-info {
+    height: 270px;
+    padding: 13px 50px 0px  50px;
+    width: 50%;
+    p {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 65px;
+    }
+  }
+
+  .image-container-1 {
+    height: 651px;
+    .image-1 {
+      height: 650px;
+    }
+  }
+
+  .circle-info {
+    h1 {
+      font-size: 150px;
+    }
+    .years {
+      font-size: 25px;
+    }
+    .exp {
+      font-size: 25px;
+      padding-left: 30px;
+    }
+  }
+
+  .safety-description, .experience {
+    margin-top: 100px;
+  }
+
+  .safety-description p {
+    font-size: 20px;
+  }
+
+  .circle {
+    height: 300px;
+    margin: 0px auto;
+    padding: 20px 0px 0px 20px;
+    width: 300px;
+  }
+
+  .image-container-2 {
+    .img-1 {
+      padding: 50px 15px 0px 70px;
+      width: 800px;
+    }
+    .img-2 {
+      padding: 50px 70px 0px 15px;
+      width: 800px;
+    }
+  }
+
+  .circle-info {
+    padding: 9px 10px 20px 25px;
+  }
+
+  .btn {
+    font-size: 21px;
+    height: 40;
+    padding: 4px 25px 5px 25px;
+    width: 170px;
+  }
+
+  .container {
+    height: 230px;
+    padding: 10px 57px;
+    width: 50%;
+  }
+
+  .timeline-right::after {
+    left: -32px;
+  }
+
+  .content {
+    height: 200px;
+    width: 487px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .timeline-left::before {
+    right: 47px;
+  }
+
+  .timeline-right::before {
+    left: 47px;
+  }
+
+  .container::after {
+    height: 60px;
+    right: -28px;
+    width: 60px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+    width: 400px;
+  }
+
+  .button {
+    position: relative;
+  }
+
+  .user-message {
+    margin: 0 auto;
+    .form-control {
+      padding: 0px;
+      width: 825px;
+    }
+  }
+
+  .footer {
+    height: 400px;
+    margin-top: 130px;
+  }
+
+  .timing-details, .clinic-details, .social-details {
+    height: 200px;
+    margin-top: 80px;
+  }
+
+  .opening-hours {
+    margin-left: 80px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+  .opening-hours {
+    p {
+      padding: 3px 0px 20px 0px;
+      width: 500px;
+    }
+    .footer-span {
+      float: right;
+    }
+  }
+
+  .socials p {
+    margin-top: 85px;
+    padding: 0px;
+  }
+
+  .copyright {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .date-right {
+    margin-top: 20px;
+    margin-right: 395px;
+  }
+
+  .date-left {
+    margin-top: 20px;
+    margin-right: 654px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav li {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .safety-description, .experience {
+    margin-top: 80px;
+  }
+
+  .personal-info {
+    height: 220px;
+    padding: 30px 50px 0px 50px;
+    width: 50%;
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 45px;
+    }
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 0px;
+    width: 150px;
+  }
+
+  .image-container-1 {
+    height: 400px;
+    .image-1 {
+      height: 400px;
+    }
+  }
+
+  .circle {
+    height: 250px;
+    margin: 0px auto;
+    width: 250px;
+  }
+
+  .circle-info {
+    padding: 30px 10px 20px 60px;
+  }
+
+  .container::after {
+    height: 60px;
+    right: -28px;
+    width: 60px;
+  }
+
+  .timeline-right::after {
+    left: -32;
+  }
+
+  .timeline-left::before {
+    right: 79px;
+  }
+
+  .content {
+    height: auto;
+    width: 350px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+    width: 400px;
+  }
+
+  .user-message {
+    margin: 0 auto;
+    margin-left: 80px;
+    .form-control {
+      width: 800px;
+    }
+  }
+
+  .footer {
+    height: 300px;
+    margin-top: 165px;
+    padding-top: 100px;
+  }
+
+  .timing-details, .clinic-details, .social-details {
+    height: 200px;
+  }
+
+  .opening-hours {
+    margin-left: 50px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .socials p {
+    float: right;
+    margin-top: 45px;
+    margin-right: 22px;
+  }
+
+  .copyright {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .date-right {
+    margin-top: 30px;
+    margin-right: 270px;
+  }
+
+  .date-left {
+    margin-top: 35px;
+    margin-right: 581px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .safety-description, .experience {
+    margin-top: 60px;
+  }
+
+  .personal-info {
+    height: 210px;
+    padding: 20px 20px 0px 20px;
+    width: 50%;
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 0px;
+    width: 150px;
+  }
+
+  .image-container-1 {
+    height: 400px;
+    .image-1 {
+      height: 400px;
+    }
+  }
+
+  .image-container-2 {
+    .img-1 {
+      padding: 0px 10px 0px 30px;
+    }
+    .img-2 {
+      padding: 0px 30px 0px 10px;
+    }
+  }
+
+  .circle {
+    height: 250px;
+    margin: 0px auto;
+    width: 250px;
+  }
+
+  .circle-info {
+    padding: 30px 55px 10px 53px;
+  }
+
+  .container {
+    height: 235px;
+    padding: 10px 53px;
+    width: 50%;
+  }
+
+  .timeline-right::after {
+    left: -16px;
+  }
+
+  .timeline-left::before {
+    right: 43px;
+  }
+
+  .timeline-right::before {
+    left: 45px;
+  }
+
+  .content {
+    height: auto;
+    width: 265px;
+  }
+
+  .container::after {
+    height: 60px;
+    right: -28px;
+    width: 60px;
+  }
+
+  .timeline-right::after {
+    left: -25;
+  }
+
+  .content .title {
+    font-size: 20px;
+  }
+
+  .booking {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+
+  .user-message {
+    margin: 0 auto;
+    .form-control {
+      width: 425px;
+    }
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  .button {
+    position: relative;
+  }
+
+  .footer {
+    height: 300px;
+    margin-top: 165px;
+    padding-top: 100px;
+  }
+
+  .timing-details, .clinic-details, .social-details {
+    height: 200px;
+  }
+
+  .opening-hours {
+    margin-left: 30px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+  .opening-hours .footer-span {
+    float: right;
+  }
+
+  .socials p {
+    float: right;
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+
+  .copyright {
+    font-size: 13px;
+    margin: 0px;
+  }
+
+  .date-right {
+    margin-top: 30px;
+    margin-right: 170px;
+  }
+
+  .date-left {
+    margin-top: 35px;
+    margin-right: 416px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bi-phone, .bi span {
+    font-size: 12px;
+  }
+
+  .personal-info {
+    clear: both;
+    position: relative;
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  .image-container-1 {
+    height: 442px;
+  }
+
+  .circle-info {
+    padding: 30px 10px 20px 60px;
+  }
+
+  .experience {
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+
+  .circle {
+    height: 250px;
+    margin: 0px auto;
+    width: 250px;
+  }
+
+  .image-container-2 {
+    .img-1 {
+      padding: 0px 10px 0px 0px;
+    }
+    .img-2 {
+      padding: 0px 0px 0px 10px;
+    }
+  }
+
+  .safety-description {
+    margin-top: 65px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 0px;
+    width: 100px;
+  }
+
+  .nav-title {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+
+  .nav-sub-title {
+    font-size: 10px;
+    padding-left: 72px;
+  }
+
+  .timeline::after {
+    left: 31px;
+    top: 130px;
+  }
+
+  .container {
+    margin-bottom: 52px;
+    padding-left: 70px;
+    padding-right: 25px;
+    width: 100%;
+  }
+
+  .timeline {
+    margin-top: 50px;
+  }
+
+  .timeline-right::after {
+    left: -16px;
+  }
+
+  .container::before {
+    border: medium solid #FFFFFF;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #000000 transparent transparent;
+    left: 61px;
+  }
+
+  .timeline-left::after {
+    left: 5px;
+  }
+
+  .timeline-right {
+    &::after {
+      left: 5px;
+    }
+    left: 0%;
+  }
+
+  .content {
+    height: auto;
+    width: auto;
+    .title {
+      font-size: 15px;
+    }
+  }
+
+  .story::after {
+    padding: 8px 0px 0px 13px;
+  }
+
+  .book-btn {
+    left: 25%;
+    margin-top: 30px;
+    width: 150px;
+  }
+
+  .circle-info .years {
+    font-size: 20px;
+  }
+
+  .booking h1 {
+    font-size: 30px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+
+  .timing-details, .clinic-details, .social-details {
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .our-clinic {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .opening-hours p, h5 {
+    margin-bottom: 20px;
+  }
+
+  .opening-hours {
+    .footer-span {
+      float: right;
+    }
+    font-size: 12px;
+  }
+
+  .our-clinic {
+    font-size: 12px;
+  }
+
+  .socials {
+    font-size: 12px;
+    p {
+      margin-top: 30px;
+      margin-right: -20px;
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .timeline-left .title {
+    text-align: justify;
+  }
+
+  .date-right, .date-left {
+    display: block;
+    float: none;
+    margin-left: 68px;
+  }
+}
