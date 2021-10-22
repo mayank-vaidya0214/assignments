@@ -2,14 +2,14 @@ var daysHTML = '';
 var daysOfWeek = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 var monthsArr = ["January", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var datesHTML = '';
-var d = new Date();
+var date = new Date();
 var todayDate = new Date();
 var todayDay = todayDate.getDate();
 var todayMonth = todayDate.getMonth();
 var todayYear = todayDate.getFullYear();
 var fullDate = todayDay.toString() + todayMonth.toString() + todayYear.toString();
-var currentMonth = d.getMonth();
-var currentYear = d.getFullYear();
+var currentMonth = date.getMonth();
+var currentYear = date.getFullYear();
 var firstDate;
 var lastDate = todayDate.setMonth(todayDate.getMonth(), 0);
 
@@ -18,9 +18,9 @@ function prevMonth() {
   if (currentMonth == -1) {
     currentMonth = 11;
     currentYear -= 1;
-    d.setFullYear(currentYear);
+    date.setFullYear(currentYear);
   }
-  d.setMonth(currentMonth);
+  date.setMonth(currentMonth);
   prepareInitData();
 }
 
@@ -29,16 +29,16 @@ function nextMonth() {
   if (currentMonth == 12) {
     currentMonth = 0;
     currentYear += 1;
-    d.setFullYear(currentYear);
+    date.setFullYear(currentYear);
   }
-  d.setMonth(currentMonth);
+  date.setMonth(currentMonth);
   prepareInitData();
 }
 
 function setPresentDate() {
-  d = new Date();
-  currentMonth = d.getMonth();
-  currentYear = d.getFullYear();
+  date = new Date();
+  currentMonth = date.getMonth();
+  currentYear = date.getFullYear();
   prepareInitData();
 }
 
@@ -118,7 +118,11 @@ function setMiniMonthHTML(noOfDays, firstDay) {
     document.getElementById("mini-calendar").innerHTML = datesHTML;
     document.getElementById("mini-month-year").innerHTML = monthsArr[currentMonth] + " " + currentYear;
 }
-    
+var fname = JSON.parse(localStorage.getItem("firstName"));
+var lname = JSON.parse(localStorage.getItem("lastName"));
+var fullName = fname + " " + lname; 
+document.getElementById("logged-user").innerHTML = fullName;
+
 var eventDate = document.getElementById("month-dates");
 
 function modalLayout(elem) {
@@ -136,18 +140,14 @@ myModal.style.display = "none";
 });
 
 function saveUserEvent() {
-  var inputMessage = document.getElementById("event-input");
+  var inputMessage = document.getElementById("event-input").value;
   var key = document.getElementById("myModal").dataset["key"];
-  localStorage.setItem(key, inputMessage.value);
-  inputMessage.value = '';
+  let event_records = new Array();
+  if(inputMessage != "") {
+    event_records =JSON.parse(localStorage.getItem(key))?JSON.parse(localStorage.getItem(key)):[];
+    event_records.push(inputMessage);
+    localStorage.setItem(key, JSON.stringify(event_records));
+  }
   myModal.style.display = "none";
   prepareInitData();
 }
-
-var firstName = localStorage.getItem("fname");
-var lastName = localStorage.getItem("lname");
-var fullName = firstName+ " " +lastName; 
-document.getElementById("logged-user").innerHTML = fullName;
-
-
-  

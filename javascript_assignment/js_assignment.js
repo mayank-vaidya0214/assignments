@@ -11,37 +11,47 @@ document.getElementById("sign-up-form").addEventListener("submit", function(even
 
 document.getElementById("sign-in-form").addEventListener("submit", function(event){
   event.preventDefault();
-
-  if (localStorage.getItem("email") == document.getElementById("sign-in-email").value && localStorage.getItem("password") == 
-  document.getElementById("sign-in-pass").value) {
-      location.href = 'calendar.html';
-  } else {
-    alert("Please enter valid email and password");
-  }
+  validateCredentials();
 });
 
 function saveUserDetails() {
 
-  var details = {
-    fname: fname.value,
-    lname: lname.value,
-    email: email.value,
-    contact: contact.value,
-    password: password.value
-  };
-  
-  console.log(details);
-  localStorage.setItem("fname", fname.value);
-  localStorage.setItem("lname", lname.value);
-  localStorage.setItem("email", email.value);
-  localStorage.setItem("contact", contact.value);
-  localStorage.setItem("password", password.value);
-  console.log(localStorage.getItem("email"));
-  console.log(localStorage.getItem("password"));
-  
-  hideSignUp();
+  let firstname,lastname,email,phone,psw;
+  firstname = document.getElementById("firstName").value;
+  lastname = document.getElementById("lastName").value;
+  email = document.getElementById("emailAddress").value;
+  phone = document.getElementById("phoneNumber").value;
+  psw = document.getElementById("pwd").value;
 
+  let user_records = new Array();
+  user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
+  user_records.push({
+    "firstName":firstname,
+    "lastName":lastname,
+    "email":email,
+    "phone":phone,
+    "psw":psw
+  });
+  localStorage.setItem("users",JSON.stringify(user_records));
+  hideSignUp();
 } 
+
+function validateCredentials() {
+  let email,psw;
+  email = document.getElementById("sign-in-email").value;
+  psw = document.getElementById("sign-in-pass").value;
+
+  let user_records = new Array();
+  user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
+  if(user_records.some((v) => {return v.email==email && v.psw==psw}))
+  {
+    alert("Login Success");
+    window.location.href="calendar.html";
+  }
+  else{
+    alert("Please enter valid email and password");
+  }
+}
 
 function handleErrors(value, targetId, currentElemId, errorMsgClass, errorMsg, ignoreValuesCheck) {
   if ((value == null || value == "" || ignoreValuesCheck) && currentElemId == targetId) {
