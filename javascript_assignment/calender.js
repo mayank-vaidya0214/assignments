@@ -118,10 +118,6 @@ function setMiniMonthHTML(noOfDays, firstDay) {
     document.getElementById("mini-calendar").innerHTML = datesHTML;
     document.getElementById("mini-month-year").innerHTML = monthsArr[currentMonth] + " " + currentYear;
 }
-var fname = JSON.parse(localStorage.getItem("firstName"));
-var lname = JSON.parse(localStorage.getItem("lastName"));
-var fullName = fname + " " + lname; 
-document.getElementById("logged-user").innerHTML = fullName;
 
 var eventDate = document.getElementById("month-dates");
 
@@ -142,12 +138,10 @@ myModal.style.display = "none";
 function saveUserEvent() {
   var inputMessage = document.getElementById("event-input").value;
   var key = document.getElementById("myModal").dataset["key"];
-  let event_records = new Array();
   if(inputMessage != "") {
-    event_records =JSON.parse(localStorage.getItem(key))?JSON.parse(localStorage.getItem(key)):[];
-    event_records.push(inputMessage);
-    localStorage.setItem(key, JSON.stringify(event_records));
+    localStorage.setItem(key, inputMessage);
   }
+  inputMessage = '';
   myModal.style.display = "none";
   prepareInitData();
 }
