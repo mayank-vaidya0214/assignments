@@ -1,4 +1,5 @@
-@import"styling";
+@import "styling";
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .navbar-nav li {
     padding: 0px 35px 0px 35px;
@@ -545,9 +546,9 @@
   }
 
   .container::before {
-    border: medium solid #FFFFFF;
+    border: medium solid $whiteColor;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent $blackColor transparent transparent;
     left: 61px;
   }
 

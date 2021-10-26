@@ -1,17 +1,31 @@
+$bodyFont-family:'Open Sans', sans-serif;
+$bodyFont-size:1 rem;
+$bodyLetter-spacing: 0.5px;
+$bodyLine-height: 1.5;
+$blueColor: #247CFF;
+$blackColor:#000000;
+$whiteColor:#FFFFFF;
+$dateColor:#212529;
+$textColor:#717275;
+$subtitleColor:#4F4F51;
+$circle-infoColor:#727983;
+$background-grayColor:#EAEAEA; 
+$footerBackground: #F9F9F9;
+
 @font-face {
   font-family: 'bootstrap-icons';
   src: url("Archive/fonts/bootstrap-icons.woff") format("woff");
 }
 
 .body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1 rem;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
+  font-family: $bodyFont-family;
+  font-size: $bodyFont-size;
+  letter-spacing: $bodyLetter-spacing;
+  line-height: $bodyLine-height;
 }
 
 .navbar-nav a, p{ 
-  color: #717275;
+  color: $textColor;
 }
 
 .navbar-toggler {
@@ -24,19 +38,19 @@
 
 #navbarMenu {
   .nav-title {
-    color: #247CFF;
+    color: $blueColor;
     font-size: 20px;
     font: bolder;
   }
 
   .nav-sub-title {
-    color: #4F4F51;
+    color: $subtitleColor;
     font-size: 10px;
   }
 }
 
 .navbar-brand .nav-title {
-  color: #247CFF;
+  color: $blueColor;
   font-size: 25px;
   text-align: center;
 }
@@ -53,7 +67,7 @@
 }
 
 .personal-info {
-  background-color: #FFFFFF;
+  background-color: $whiteColor;
   bottom: 0;
   float: right;
   padding: 10px;
@@ -72,17 +86,17 @@
 
 .circle-info {
   h1 {
-    color: #247CFF;
+    color: $blueColor;
     font-weight: bold;
   }
 
   .years {
-    color: #727983;
+    color: $circle-infoColor;
     font-size: 23px;
   }
 
   .exp {
-    color: #727983;
+    color: $circle-infoColor;
     font-size: 20px;
     font-weight: bold;
     padding-left: 10px;
@@ -102,14 +116,14 @@
 }
 
 .personal-info span {
-  color: #247CFF;
+  color: $blueColor;
 }
 
 .btn {
-  background-color: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background-color: $whiteColor;
+  border: 1px solid $background-grayColor;
   border-radius: 0px;
-  color: #247CFF;
+  color: $blueColor;
   font-size: 10px;
   height: 30px;
   width: 100px;
@@ -122,20 +136,20 @@
 }
 
 .book-btn {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: $whiteColor;
+  background-color: $blackColor;
   left: 43%;
   margin-top: 30px;
   position: absolute;
   width: 150px;
 
   &:hover {
-    color: #FFFFFF;
+    color: $whiteColor;
   }
 }
 
 .description {
-  color: #9A9C9D;
+  color: $textColor;
 }
 
 .timeline {
@@ -150,7 +164,7 @@
   }
 
   &::after {
-    background-color: #FFFFFF;
+    background-color: $whiteColor;
     bottom: 0;
     content: '';
     left: 50%;
@@ -169,7 +183,7 @@
   width: 50%;
 
   &::after {
-    background-color: #FFFFFF;
+    background-color: $whiteColor;
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgb(0,0,0 / 5%);
     content: '';
@@ -194,7 +208,7 @@
 
 @mixin timeline {
   border: medium solid #0000;
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent $blackColor;
   content: " ";
   height: 0;
   position: absolute;
@@ -212,7 +226,7 @@
   &::before {
     @include timeline;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent $blackColor transparent transparent;
     left: 50px;
   }
   &::after {
@@ -221,16 +235,16 @@
 }
 
 .content {
-  background-color: #FFFFFF;
+  background-color: $whiteColor;
   border-radius: 6px;
   box-shadow: 0px 0px 20px rgb(0,0,0 / 5%);
   position: relative;
 
   .title {
-    background-color: #000000;
+    background-color: $blackColor;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    color: #FFFFFF;
+    color: $whiteColor;
     text-align: justify;
     font-size: 25px;
     font-weight: bold;
@@ -242,7 +256,7 @@
 }
 
 .story::after {
-  color: #257EF6;
+  color: $blueColor;
   font-family: bootstrap-icons !important;
   font-size: 23px;
   padding: 12px 0px 0px 18px;
@@ -269,7 +283,7 @@
 }
 
 .timeline::after {
-  background-color: #EAEAEA;
+  background-color: $background-grayColor;
   bottom: 175px;
   opacity: 0.6;
   top: 110px;
@@ -283,29 +297,29 @@
 }
 
 .bi-phone {
-  color: #717275;
+  color: $textColor;
   font-size: 20px;
   margin-left: 40px;
 }
 
 .bi span {
-  color: #9E9999;
+  color: $textColor;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
 }
 
 .our-clinic a {
-  color: #717275;
+  color: $textColor;
   font-size: 16px;
 }
 
 .footer {
-  background-color: #F9F9F9;
+  background-color: $footerBackground;
 }
 
 .opening-hours p {
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid $background-grayColor;
 }
 
 .form-control {
@@ -314,7 +328,7 @@
 }
 
 i {
-  color: #717275;
+  color: $textColor;
   margin: 0px 5px 0px 5px;
 }
 
@@ -323,7 +337,7 @@ i {
 }
 
 .date-right, .date-left {
-  color: #212529;
+  color: $dateColor;
   float: right;
   font-size: 16px;
 }
