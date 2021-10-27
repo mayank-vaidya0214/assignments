@@ -1,30 +1,19 @@
-const fname = document.getElementById("firstName");
-const lname = document.getElementById("lastName");
-const email = document.getElementById("emailAddress");
-const contact = document.getElementById("phoneNumber"); 
-const password = document.getElementById("pwd");
-
-document.getElementById("sign-up-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  saveUserDetails();
-});
-
-document.getElementById("sign-in-form").addEventListener("submit", function(event){
-  event.preventDefault();
-  validateCredentials();
-});
+var fname = $('#firstName');
+var lname = $('#lastName');
+var email = $('#emailAddress');
+var contact = $('#phoneNumber'); 
+var password = $('#pwd');
 
 function saveUserDetails() {
-
   let firstname,lastname,email,phone,psw;
-  firstname = document.getElementById("firstName").value;
-  lastname = document.getElementById("lastName").value;
-  email = document.getElementById("emailAddress").value;
-  phone = document.getElementById("phoneNumber").value;
-  psw = document.getElementById("pwd").value;
+  firstname =  $('#firstName').val();
+  lastname = $('#lastName').val();
+  email = $('#emailAddress').val();
+  phone = $('#phoneNumber').val();
+  psw = $('#pwd').val();
 
   let user_records = new Array();
-  user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
+  user_records = jQuery.parseJSON(localStorage.getItem("users"))?jQuery.parseJSON(localStorage.getItem("users")):[];
   user_records.push({
     "firstName":firstname,
     "lastName":lastname,
@@ -34,21 +23,22 @@ function saveUserDetails() {
   });
   localStorage.setItem("users",JSON.stringify(user_records));
   hideSignUp();
-} 
+}
 
 function validateCredentials() {
-  let email,psw;
-  email = document.getElementById("sign-in-email").value;
-  psw = document.getElementById("sign-in-pass").value;
+  let email, psw;
+  email = $("#sign-in-email").val();
+  psw = $("#sign-in-pass").val();
 
   let user_records = new Array();
-  user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
-  if(user_records.some((v) => {return v.email==email && v.psw==psw}))
-  {
-    alert("Login Success");
-    window.location.href="calendar.html";
-  }
-  else{
+  user_records = jQuery.parseJSON(localStorage.getItem("users"))?jQuery.parseJSON(localStorage.getItem("users")):[];
+  if(email != "" && psw !== ""){
+    if(user_records.some((v) => {return v.email==email && v.psw==psw})) {
+      alert("Login Success");
+      window.location.href="jquery_calendar.html";
+    }
+  } 
+  else {
     alert("Please enter valid email and password");
   }
 }
@@ -62,15 +52,14 @@ function handleErrors(value, targetId, currentElemId, errorMsgClass, errorMsg, i
   }
   return false;
 }
-  
+
 function checkValidation(elem) {
   var targetId = elem.id;
   var error = false;
-  
 
   var fname = document.forms["f1"]["first-name"].value;
   error = handleErrors(fname, targetId, "firstName", "first-name-error", "Please enter first name");
-   
+  
   var lname = document.forms["f1"]["last-name"].value;  
   error = handleErrors(lname, targetId, "lastName", "last-name-error", "Please enter last name");
 
@@ -79,19 +68,19 @@ function checkValidation(elem) {
   error = handleErrors(email, targetId, "emailAddress", "email-error", "Please enter email");  
 
   var phone = document.forms["f1"]["phone-number"].value;
-  document.getElementById('phone-error').innerHTML = '';
+  $('#phone-error').html = '';
 
   if ((phone == null || phone == "") && targetId == 'phoneNumber') {
     error = true;
-    document.getElementById('phone-error').innerHTML = 'Phone number must be filled out';
+    $('#phone-error').html = 'Phone number must be filled out';
   }
 
   if((phone != null || phone != "") && targetId == 'phoneNumber') {
     if(isNaN(phone)) {
-      document.getElementById("phone-error").innerHTML = "Please enter valid phone number";
+     $("#phone-error").html= "Please enter valid phone number";
     }
     if(phone.length < 10 || phone.length > 12){
-      document.getElementById("phone-error").innerHTML = "Please enter valid phone numbe";
+      $("#phone-error").html = "Please enter valid phone numbe";
     }
   }
 
@@ -109,29 +98,54 @@ function checkValidation(elem) {
   if(pass1 != "" && pass2 != "") {
   var firstpassword = document.f1.password1.value;  
   var secondpassword = document.f1.password2.value;  
-   
+  
     if (firstpassword != secondpassword) {  
       error = true;
-      document.getElementById('pwd2-error').innerHTML = 'Password must be same';   
+      $('#pwd2-error').html = 'Password must be same';   
     }
     
     if (!error) {
-      var s = document.getElementById("reg-form-submit");
-      s.removeAttribute("disabled");
+      var s = $("#reg-form-submit");
+      s.removeAttr("disabled");
     } 
   }
 }
 
 function hideSignUp() {
-  var formElem = document.getElementById("sign-up-container");
-  formElem.classList.add("d-none");
-  var signinformElem = document.getElementById("sign-in-container");
-  signinformElem.classList.remove("d-none"); 
+  var formElem = $("#sign-up-container");
+  formElem.addClass("d-none");
+  var signinformElem = $("#sign-in-container");
+  signinformElem.removeClass("d-none"); 
 }
 
 function hideSignIn() {
-  var formElem = document.getElementById("sign-up-container");
-  formElem.classList.remove("d-none");
-  var signinformElem = document.getElementById("sign-in-container");
-  signinformElem.classList.add("d-none"); 
+  var formElem = $("#sign-up-container");
+  formElem.removeClass("d-none");
+  var signinformElem = $("#sign-in-container");
+  signinformElem.addClass("d-none"); 
 }
+
+
+$(document).ready(function() {
+  $("#sign-up-form").on("submit", function(event) {
+    event.preventDefault();
+    saveUserDetails();
+  });
+
+  $("#sign-in-form").on("submit", function(event) {
+    event.preventDefault();
+    validateCredentials();
+  });
+  
+  $(".form-control").on('blur', function() {
+    checkValidation(this);
+  });
+  
+  $('#sign-up').click(function() {
+    hideSignUp();
+  });
+
+  $('#sign-in').click(function() {
+    hideSignIn();
+  });
+});

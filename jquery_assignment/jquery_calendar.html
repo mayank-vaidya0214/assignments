@@ -11,7 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="calendar.css">
+  <script src="jquery_calendar.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="jquery_calendar.css">
   
 </head>
 <body>
@@ -20,11 +21,11 @@
       <div class="navigate-month">
       <div class="my-calender">My Calender</div> 
       <div class="today-btn">
-        <button class="btn today" onclick="setPresentDate()">Today</button>
+        <button class="btn today" id="today">Today</button> 
       </div>
       <div class="navigation-link">
-        <a href="#" onclick="prevMonth()"> < </a>
-        <a href="#" onclick="nextMonth()"> > </a>
+        <a href="#" id="prev-month"> < </a> 
+        <a href="#" id="next-month"> > </a>
       </div>
       <div class="month">
         <p id="month-year"></p>
@@ -34,7 +35,7 @@
       <div id="logged-user">Logged User</div>
     </div>
     <div class="sign-out">
-      <a href="#" onclick="location.href = 'js_assignment.html'" class="sign-out">SignOut</a>
+      <a href="#" class="sign-out" id="sign-out-link">SignOut</a>
     </div>
     </div>
     <div class="row common-box col-md-10">
@@ -52,7 +53,7 @@
             <input type="text" placeholder="Add you events here" id="event-input">
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-success" data-dismiss="modal" id="submit-event" onclick="saveUserEvent()">Submit</button>
+            <button type="submit" class="btn btn-success" data-dismiss="modal" id="submit-event">Submit</button> 
           </div>  
         </div>
       </div>
@@ -64,13 +65,12 @@
           <p id="mini-month-year"></p>
         </div>
         <div class="mini-navigation-link">
-          <a href="#" onclick="prevMonth()"> < </a>
-          <a href="#" onclick="nextMonth()"> > </a>
+          <a href="#" id="mini-prev-month"> < </a> 
+          <a href="#" id="mini-next-month" > > </a>
         </div>
       </div>
       <div id="mini-calendar"></div>
     </div>
   </div>
-  <script src="calender.js" type="text/javascript"></script>
 </body>
 </html>

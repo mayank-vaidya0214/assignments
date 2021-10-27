@@ -49,10 +49,6 @@ function prepareInitData() {
   setMiniMonthHTML(noOfDays, firstDay);
 }
  
-window.addEventListener("load", function() {
-  prepareInitData();
-});
-
 function setMonthHTML(noOfDays, firstDay) {
   datesHTML = '';
   lastDate = 31;
@@ -89,8 +85,8 @@ function setMonthHTML(noOfDays, firstDay) {
         datesHTML += "</div>";  
     }
     
-    document.getElementById("month-dates").innerHTML = datesHTML;
-    document.getElementById("month-year").innerHTML = monthsArr[currentMonth] + " " + currentYear;
+    $("#month-dates").html(datesHTML);
+    $("#month-year").html(monthsArr[currentMonth] + " " + currentYear);
 }
 
 function setMiniMonthHTML(noOfDays, firstDay) {
@@ -115,33 +111,62 @@ function setMiniMonthHTML(noOfDays, firstDay) {
     datesHTML += "</div>";   
   }
     
-    document.getElementById("mini-calendar").innerHTML = datesHTML;
-    document.getElementById("mini-month-year").innerHTML = monthsArr[currentMonth] + " " + currentYear;
+    $("#mini-calendar").html(datesHTML);
+    $("#mini-month-year").html(monthsArr[currentMonth] + " " + currentYear);
 }
 
 var eventDate = document.getElementById("month-dates");
 
 function modalLayout(elem) {
-  myModal.style.display = "block";
+  $('#myModal').css("display","block");
   var clickedDate = elem.dataset["date"];
   var clickedMonth = elem.dataset["month"];
   var clickedYear = elem.dataset["year"];
   var key = clickedDate + clickedMonth + clickedYear;
-  myModal.setAttribute("data-key",key);
+  $('#myModal').attr("data-key",key);
 }
 
-var closeBtn = document.getElementById("close");
-closeBtn.addEventListener("click" ,function closeButton() {
-myModal.style.display = "none";
-});
+function closeButton() {
+  $('#myModal').css("display","none");
+}
 
 function saveUserEvent() {
-  var inputMessage = document.getElementById("event-input").value;
-  var key = document.getElementById("myModal").dataset["key"];
+  var inputMessage = $("#event-input").val();
+  var key = $("#myModal").data("key");
   if(inputMessage != "") {
     localStorage.setItem(key, inputMessage);
   }
   inputMessage = '';
-  myModal.style.display = "none";
+  $('#myModal').css("display","none");
   prepareInitData();
 }
+
+$(document).ready(function() {
+  $("#today").on("click", function() { 
+    setPresentDate();
+  });
+  $("#prev-month").on("click" , function() {
+    prevMonth();
+  });
+  $("#next-month").on("click" , function() {
+    nextMonth();
+  });
+  $("#mini-prev-month").on("click", function() {
+    prevMonth();
+  });
+  $("#mini-next-month").on("click", function() {
+    nextMonth();
+  });
+  $("#sign-out-link").on("click", function() {
+    window.location.href = 'jquery_registration.html';
+  });
+  $("#close").on("click" ,function () {
+    closeButton(); 
+  });
+  $("#submit-event").on("click", function() {
+    saveUserEvent(); 
+  });
+});
+$(window).on("load", function() {
+  prepareInitData();
+});
