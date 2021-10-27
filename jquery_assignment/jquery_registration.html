@@ -11,8 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="js_assignment.css">
-  <!-- <link rel="stylesheet" href="calendar.html"> -->
+  <script src="jquery_page_validation.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="jquery_registration.css">  
+
 </head>
 <body>
   <section class="vh-100">
@@ -28,7 +29,7 @@
                   <div class="col-md-6">
   
                     <div class="form-outline">
-                      <input type="text" id="firstName" name="first-name" class="form-control form-control-lg" placeholder="First name" onblur="checkValidation(this)"/>
+                      <input type="text" id="firstName" name="first-name" class="form-control form-control-lg" placeholder="First name"/>
                       <span class="text-danger"><p id="first-name-error"></p></span>
                     </div>
   
@@ -36,7 +37,7 @@
                   <div class="col-md-6 mb-4">
   
                     <div class="form-outline">
-                      <input type="text" id="lastName" name="last-name" class="form-control form-control-lg"  placeholder="Last name" onblur="checkValidation(this)"/>
+                      <input type="text" id="lastName" name="last-name" class="form-control form-control-lg"  placeholder="Last name"/>
                       <span class="text-danger"><p id="last-name-error"></p></span>
                     </div>
   
@@ -47,7 +48,7 @@
                   <div class="col-md-12">
   
                     <div class="form-outline">
-                      <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" placeholder="Email" onblur="checkValidation(this)"/>
+                      <input type="email" id="emailAddress" name="email" class="form-control form-control-lg" placeholder="Email"/>
                       <span class="text-danger"><p id="email-error"></p></span>
                     </div>
   
@@ -58,7 +59,7 @@
                   <div class="col-md-6 phone-number-block">
   
                     <div class="form-outline">
-                      <input type="tel" id="phoneNumber" name="phone-number" class="form-control form-control-lg" placeholder="Phone number" onblur="checkValidation(this)"/>
+                      <input type="tel" id="phoneNumber" name="phone-number" class="form-control form-control-lg" placeholder="Phone number"/>
                       <span class="text-danger"><p id="phone-error"></p></span>
                     </div>
   
@@ -109,7 +110,7 @@
                   <div class="col-md-6">
   
                     <div class="form-outline">
-                      <input type="password" id="pwd" name ="password1"class="form-control form-control-lg" placeholder="Password" onblur="checkValidation(this)"/>
+                      <input type="password" id="pwd" name ="password1"class="form-control form-control-lg" placeholder="Password"/>
                       <span class="text-danger"><p id="pwd1-error"></p></span>
                     </div>
   
@@ -117,7 +118,7 @@
                   <div class="col-md-6">
   
                     <div class="form-outline">
-                      <input type="password" id="cpwd" name = "password2" class="form-control form-control-lg"  placeholder="Confirm password" onblur="checkValidation(this)"/>
+                      <input type="password" id="cpwd" name = "password2" class="form-control form-control-lg"  placeholder="Confirm password"/>
                       <span class="text-danger"><p id="pwd2-error"></p></span>
                     </div>
   
@@ -126,7 +127,7 @@
 
                 <div class="row">
                   <div class="col-md-6">
-                    <a href="#" onclick="hideSignUp()">Go to Sign In</a>
+                    <a href="#" id="sign-up">Go to Sign In</a>
                   </div>
                   <div class="button col-md-6">
                     <input class="btn btn-primary btn-lg" type="submit" id="reg-form-submit" value="Submit" disabled/>
@@ -166,7 +167,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-6">
-                    <a href="#" class="btn" onclick="hideSignIn()">Create Account</a>
+                    <a href="#" class="btn" id="sign-in">Create Account</a>
                   </div>
                   <div class="button col-md-6">
                     <input class="btn btn-primary btn-lg" type="submit" id="form-submit" value="Submit"/>
@@ -179,7 +180,6 @@
       </div>
     </div>
   </section>
-  <script src="js_assignment.js" type="text/javascript"></script>  
 </body>
 </html>
 
