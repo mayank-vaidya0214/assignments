@@ -1,0 +1,41 @@
+.issue-block {
+  height : 147px !important;
+  padding: 0px !important;
+}
+
+.about-block {
+  margin-top: 10px !important;
+  padding: 5px !important;
+}
+
+.visitor {
+  height:  250px !important;
+}
+
+.heading-content {
+  padding: 5px !important;
+  justify-content: center !important;
+}
+
+.about-icons {
+  padding: 10px !important;
+}
+
+.right-arrow {
+  right : 10px
+ }
+
+ .create-post {
+   display: flex !important;
+   bottom: 0px !important;
+   align-items: center !important;
+   justify-content: center !important;
+ }
+
+ .see-all {
+  margin-left: 180px;
+ }
+
+ .issueblock-avatar {
+   margin-left: 10px !important;
+ }
