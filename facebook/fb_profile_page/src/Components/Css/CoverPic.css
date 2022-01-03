@@ -1,0 +1,29 @@
+.cover-picture {
+  height: 200px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: #285B9B !important;
+}
+
+.extra-btn {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.profile-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.btn2 {
+  bottom: 13px;
+  right: 30px;
+  position: absolute;
+  background-color: #3B5998;
+  color: white;
+  width: 200px;
+}
+
+.cover-heading{
+  color: #B8D9FB !important;
+  text-align: center !important;
+}

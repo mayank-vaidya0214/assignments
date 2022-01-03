@@ -1,0 +1,18 @@
+.side-menu {
+  padding: 0px !important;
+}
+.right-menu {
+  border-right-width: 0px !important;
+}
+
+.ui.vertical.menu {
+  width: 17rem !important;
+} 
+
+.user-image {
+  height: 150px !important;
+}
+
+.sidemenu-content {
+  background-color: #E9EBEE;
+}
